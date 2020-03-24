@@ -53,11 +53,31 @@
                 <img src="images/platzi-conf.jpg" width="500"/>
             </figure>
             <h3>PlatziConf México 2020</h3>
-            <p>El evento más grande sobre gente que quiere aprender mas de internet. En este </p>
+            <p>El evento más grande sobre gente que quiere aprender más de internet. En este </p>
             <a>Ver Pláctica</a>
         </article>
     </section>
-    <section>Sección Contacto</section>
-    <footer></footer>
+    <section>
+        <form action="/suscripcion/"><!--/suscripcion/ es para enviar a guarda los datos, esto pertenece a programacion en backend-->
+
+            <!--Para dejar escrito un mensaje el textbox del input, además del placeholder se puede usar la etiqueta 
+                <label for="">Déjame tu email</label>  -->
+            
+            <h3>¿Creamos algo juntos?</h3>    
+            
+            <input type="text" placeholder="Déjame tu email"><!--Cuando coloco el atributo value="@gmail.com", se agregara este texto al textbox del input y puedo completarlo;
+            en caso de que lo quite (borra para poner datos que quiero), aparece lo escrito en el placeholder="" -->
+            
+            <!--En caso de que el <label for="email">Déjame tu email</label> y agregamos el atributo id="email" en el input placeholder
+            hace un focus (al hacer clic en el mensaje del label se dirige solo al texbox para escribir)-->
+            
+            <!--Entres los tipos de input type="", tenemos, el button, chechkbox, color, date(cuando haces clic en el textbox te muestra
+                una label o placeholder en formato de tiempo)-->   
+            
+            <!--<input type="submit" value="texto del botón"> también crea un botón para enviar el formulario-->
+            <button>Enviar</button> <!--Otra forma de colocar este boton cito es con el <input type="submit" value="texto del boton" -->   
+        </form>
+    </section>
+    <footer>footer</footer>
 </body>
 </html>
