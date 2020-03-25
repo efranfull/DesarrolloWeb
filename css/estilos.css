@@ -1,0 +1,4 @@
+header
+{
+    background: pink !important; /* !important agregado para que sobre salga por encima de los demas estilos del html.*/
+}
