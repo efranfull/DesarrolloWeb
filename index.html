@@ -15,13 +15,15 @@
           <nav>
               <ol>
                   <li>
-                    <a href="#">Portafolio</a>
+                    <a href="#portafolio">Portafolio</a>
+                    <!--Si yo quiera navegar a otra pagina dentro de mi website el ejemplo seria href="./portafolio" y crear
+                    una carpeta con el nombre de portafolio y dentro de la carpeta un index.html para esta sección-->
                   </li>
                   <li>
-                    <a href="#">Experiencia</a>
+                    <a href="#eventos">Experiencia</a>
                   </li>
                   <li>
-                    <a href="#">Trabajemos Juntos</a>
+                    <a href="#contacto">Trabajemos Juntos</a>
                   </li>
                 </ol>
           </nav>
@@ -33,7 +35,7 @@
         </h1>
         <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio">
     </section>
-    <section>
+    <section id="portafolio">
         <h2>Portafolio (Proyectos Destacados)</h2>
         <article>
             <h3>Platzi Video</h3>
@@ -46,7 +48,7 @@
        <img width="500" src="images/platzi-video-react-native.png" alt="Proyecto del Curso de React Native"> 
         </article>
     </section>
-    <section>
+    <section id="eventos">
         <article>
             <h2>Más sobre mi experiencia</h2>
             <figure>
@@ -54,10 +56,10 @@
             </figure>
             <h3>PlatziConf México 2020</h3>
             <p>El evento más grande sobre gente que quiere aprender más de internet. En este </p>
-            <a>Ver Pláctica</a>
+            <a href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Pláctica</a>
         </article>
     </section>
-    <section>
+    <section id="contacto">
         <form action="/suscripcion/"><!--/suscripcion/ es para enviar a guarda los datos, esto pertenece a programacion en backend-->
 
             <!--Para dejar escrito un mensaje el textbox del input, además del placeholder se puede usar la etiqueta 
