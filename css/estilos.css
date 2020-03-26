@@ -1,4 +1,18 @@
+/*reglas: como se arma todo el comando dentro de css. Ejemplo: el codigo de la linea 8 a la 11.
+selectores : ej: header 
+declaraciones: todo lo que estadentro de las llaves {} es una declaración  
+propiedades background:
+valores: pink;*/ 
+
 header
 {
-    background: pink !important; /* !important agregado para que sobre salga por encima de los demas estilos del html.*/
+    background: pink; /* !important agregado para que sobre salga por encima de los demas estilos del html.*/
 }
+
+/*Selector de etiquetas: header, seccion, article - nav. 
+Selector descendente: body que tiene dentro header, div, nav, ol, li, a
+los mismo dentro del html en pocas palabras. 
+hay atributos o selector de clases, con el comando a class="link" tambien se puede hacer .nombredelaclase 
+Selector de id: #. ejemplo: #portafolio
+
+*/ 

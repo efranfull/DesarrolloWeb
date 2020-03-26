@@ -7,16 +7,9 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <!--Otra forma de colocar los estilos es llamandolos desde un archivo externo.-->    
     <link rel="stylesheet" href="css/estilos.css"> <!--para hacer este sobre salga se agrega !important en el archivo.-->
-    <style>
-        header {
-            background: green; /* si quietamos el estilo del header del body este apareceria porque sobreescribe la hoja de estilo que
-            se mando a llamar --> css/estilos.css*/
-        }
-    </style>
 </head>
 <body>
-    <header style="color:red; background:blue;"><!--- style="color:red; background:blue;"> se puede poner donde quiera, 
-        por eso lo pondremos en el head para hacer expermientos.-->
+    <header>
         <div>
           <figure>
               <img src="images/logo.png" alt="Logo de http://ramonguzman.xyz" />
@@ -24,15 +17,15 @@
           <nav>
               <ol>
                   <li>
-                    <a href="#portafolio">Portafolio</a>
+                    <a class="link" href="#portafolio">Portafolio</a>
                     <!--Si yo quiera navegar a otra pagina dentro de mi website el ejemplo seria href="./portafolio" y crear
                     una carpeta con el nombre de portafolio y dentro de la carpeta un index.html para esta sección-->
                   </li>
                   <li>
-                    <a href="#eventos">Experiencia</a>
+                    <a class="link" href="#eventos">Experiencia</a>
                   </li>
                   <li>
-                    <a href="#contacto">Trabajemos Juntos</a>
+                    <a class="link" href="#contacto">Trabajemos Juntos</a>
                   </li>
                 </ol>
           </nav>
