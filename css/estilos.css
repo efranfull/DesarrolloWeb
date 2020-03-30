@@ -25,5 +25,15 @@ body{
 h1, h2, h3, h4, h5, h6
 {
     font-family: 'Fjalla One', sans-serif; /*Cuando las fuentes tienen mas de dos palabras se encierran en comillas '' */
+    font-weight: normal; /*100 es el mas fino y 900 es mas grueso, 400 es normal y asi lo puedo escribir y bold es 600*/
+    /*font-style: italic; italic, mejor conocida como cursiva*/
 } /*Si unas de mis fuentes no esta instalada en el sistema, la podemos colocar dentro de los archivos del website. 
     Tambien se puede hacer con algun servicio que nos proveas estos tipos alternativos de letras(fuentes). */
+
+h1 { /*Puede colocar varios estilos al mismo elemento, al ponerlo aqui estoy pisando la propiedad anterior.*/
+    font-size: 40px;
+    line-height: 1.5em; /*Que es el tamano de mis fuente, (inspector de elemento chrome) tambien es igual 150%, */ 
+    letter-spacing: -.2px; /*Cambia el espacio que hay entre cada letra. El valor es de valor negativo.*/
+    /*text-transform: uppercase; Para cambian a mayuscula*/
+    /*text-decoration: underline; con underline es subrayado*/
+}
