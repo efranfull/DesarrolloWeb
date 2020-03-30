@@ -4,10 +4,10 @@ declaraciones: todo lo que estadentro de las llaves {} es una declaración
 propiedades background:
 valores: pink;*/ 
 
-header
+/*header
 {
-    background: pink; /* !important agregado para que sobre salga por encima de los demas estilos del html.*/
-}
+    background: pink; /* !important agregado para que sobre salga por encima de los demas estilos del html.
+}*/
 
 /*Selector de etiquetas: header, seccion, article - nav. 
 Selector descendente: body que tiene dentro header, div, nav, ol, li, a
@@ -16,3 +16,14 @@ hay atributos o selector de clases, con el comando a class="link" tambien se pue
 Selector de id: #. ejemplo: #portafolio
 
 */ 
+
+body{
+    font-family: 'Source Sans Pro', sans-serif; /*sans-serif no es una fuente, solo sino encuentra 
+    la principal buscara otra fuente del sistema*/
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Fjalla One', sans-serif; /*Cuando las fuentes tienen mas de dos palabras se encierran en comillas '' */
+} /*Si unas de mis fuentes no esta instalada en el sistema, la podemos colocar dentro de los archivos del website. 
+    Tambien se puede hacer con algun servicio que nos proveas estos tipos alternativos de letras(fuentes). */
