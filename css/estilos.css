@@ -13,9 +13,12 @@ valores: pink;*/
 Selector descendente: body que tiene dentro header, div, nav, ol, li, a
 los mismo dentro del html en pocas palabras. 
 hay atributos o selector de clases, con el comando a class="link" tambien se puede hacer .nombredelaclase 
-Selector de id: #. ejemplo: #portafolio
+Selector de id: #. ejemplo: #portafolio*/
 
-*/ 
+/* gris oscuro = #1d252c */
+/* gris claro = #626262 */
+/* background gris = #1b2127 */
+/* celeste = #026fff */
 
 body{
     font-family: 'Source Sans Pro', sans-serif; /*sans-serif no es una fuente, solo sino encuentra 
@@ -34,12 +37,23 @@ h1 { /*Puede colocar varios estilos al mismo elemento, al ponerlo aqui estoy pis
     font-size: 40px;
     line-height: 1.5em; /*Que es el tamano de mis fuente, (inspector de elemento chrome) tambien es igual 150%, */ 
     letter-spacing: -.2px; /*Cambia el espacio que hay entre cada letra. El valor es de valor negativo.*/
+    color: white;
     /*text-transform: uppercase; Para cambian a mayuscula*/
     /*text-decoration: underline; con underline es subrayado*/
 }
 
+h1 strong {
+    color: #026fff;
+}
+
 .hero {
     height: 300px;
+    background-image: url('../images/hero.jpg'); /*cuando pongo ../ estoy saliendo de la carpeta ccs */
+    background-color: #1b2127;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right; /*back..posit..-x: 100px la x representa el eje horizaontal y (y) el vertical, pero usaremos right*/
+    
 }
 
 .project-details {
@@ -48,4 +62,14 @@ h1 { /*Puede colocar varios estilos al mismo elemento, al ponerlo aqui estoy pis
 
 .roject-imageContainer {
     width: 500px;
+}
+
+.header {
+    background-color: #1b2127;
+    color: white;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
 }
