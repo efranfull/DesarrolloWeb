@@ -37,3 +37,15 @@ h1 { /*Puede colocar varios estilos al mismo elemento, al ponerlo aqui estoy pis
     /*text-transform: uppercase; Para cambian a mayuscula*/
     /*text-decoration: underline; con underline es subrayado*/
 }
+
+.hero {
+    height: 300px;
+}
+
+.project-details {
+    width: 500px;
+}
+
+.roject-imageContainer {
+    width: 500px;
+}
