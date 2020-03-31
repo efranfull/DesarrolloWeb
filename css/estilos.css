@@ -38,6 +38,7 @@ h1 { /*Puede colocar varios estilos al mismo elemento, al ponerlo aqui estoy pis
     line-height: 1.5em; /*Que es el tamano de mis fuente, (inspector de elemento chrome) tambien es igual 150%, */ 
     letter-spacing: -.2px; /*Cambia el espacio que hay entre cada letra. El valor es de valor negativo.*/
     color: white;
+    margin: 100px 150px 70px 30px;/* margin recibe los siguientes parametros: top right bottom left;
     /*text-transform: uppercase; Para cambian a mayuscula*/
     /*text-decoration: underline; con underline es subrayado*/
 }
@@ -67,10 +68,11 @@ h1 strong {
     border-top-style: solid; */
     border: 1px solid gray;
     border-radius: 10px;
-    border-top-left-radius: 50px; /*solo altera el borde redondeados de una de la esquina y las demas quedan normal*/
+    /* border-top-left-radius: 50px; /*solo altera el borde redondeados de una de la esquina y las demas quedan normal
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    margin-bottom: 15px;
 }
 
 .project-details {
