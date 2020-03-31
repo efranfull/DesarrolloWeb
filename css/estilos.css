@@ -23,6 +23,7 @@ Selector de id: #. ejemplo: #portafolio*/
 body{
     font-family: 'Source Sans Pro', sans-serif; /*sans-serif no es una fuente, solo sino encuentra 
     la principal buscara otra fuente del sistema*/
+    margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -57,6 +58,10 @@ h1 strong {
     
 }
 
+.portfolio {
+    background: #fafafa;
+}
+
 .project {
     /*border-top: 10px solid red; Boder-top puedo configurarle el tamaño, tipo, estilo
     border-right: 10px solid green;
@@ -72,7 +77,11 @@ h1 strong {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; */
+    margin: 10px ;
     margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+
 }
 
 .project-details {
