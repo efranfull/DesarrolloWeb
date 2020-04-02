@@ -20,6 +20,8 @@ Selector de id: #. ejemplo: #portafolio*/
 /* background gris = #1b2127 */
 /* celeste = #026fff */
 
+/* box-sizing: border-box; hace que nuestra caja del elemento que queramos se mantenga con el tamaño fijo que hayamos elegido.*/
+
 body{
     font-family: 'Source Sans Pro', sans-serif; /*sans-serif no es una fuente, solo sino encuentra 
     la principal buscara otra fuente del sistema*/
@@ -101,3 +103,21 @@ h1 strong {
     color: white;
     text-decoration: none;
 }
+
+.flexbox {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    flex-wrap: wrap;
+    /*flex-direction: column; coloca los box en por columnas, si se elige row seria en filas*/
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    margin: 5 px;
+    border: 1px solid red;
+
+    flex-shrink: 0; /*evita que los box se encojan quedan del tamaño que se le establecio.*/
+}
+/*Display block - tomara todo el ancho que pueda de la pantala.*/
+/*Display inline- Espera */
