@@ -41,7 +41,8 @@ h1 { /*Puede colocar varios estilos al mismo elemento, al ponerlo aqui estoy pis
     line-height: 1.5em; /*Que es el tamano de mis fuente, (inspector de elemento chrome) tambien es igual 150%, */
     letter-spacing: -.2px; /*Cambia el espacio que hay entre cada letra. El valor es de valor negativo.*/
     color: white;
-    margin: 100px 150px 70px 30px;/* margin recibe los siguientes parametros: top right bottom left;
+    margin: 0;
+    /*margin: 100px 150px 70px 30px; margin recibe los siguientes parametros: top right bottom left;
     /*text-transform: uppercase; Para cambian a mayuscula*/
     /*text-decoration: underline; con underline es subrayado*/
 }
@@ -52,11 +53,11 @@ h1 strong {
 
 .hero {
     height: 300px;
-    /*background-image: url('../images/hero.jpg'); cuando pongo ../ estoy saliendo de la carpeta ccs */
+    background-image: url('../images/hero.jpg'); /*cuando pongo ../ estoy saliendo de la carpeta ccs */
     background-color: #1b2127;
-    /* background-size: 500px 300px;
+    background-size: 500px 300px;
     background-repeat: no-repeat;
-    background-position-x: right; back..posit..-x: 100px la x representa el eje horizaontal y (y) el vertical, pero usaremos right*/ */
+    background-position-x: right; /*back..posit..-x: 100px la x representa el eje horizaontal y (y) el vertical, pero usaremos right*/ */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -103,8 +104,9 @@ h1 strong {
     background-color: #1b2127;
     color: white;
     display: flex;
+    height: 70px; /* <---- solo agregamos esta linea */
+    align-items: center;
     justify-content: space-between;
-    height: 90px; /* <---- solo agregamos esta linea */
 }
 
 ol,
@@ -126,14 +128,14 @@ figure {
   display: flex;
   height: inherit;
 }
-
-.header ol li { /* .header ol li hereda de .header ol */
+/* .header ol li hereda de .header ol */
+.header ol li { 
   height: inherit;
 }
 
 .header a {
-    color: white;
-    text-decoration: none;
+    /* color: white; */
+    /* text-decoration: none; */
     height: inherit;
     display: flex;
     align-items: center;
@@ -156,3 +158,19 @@ figure {
 }
 /*Display block - tomara todo el ancho que pueda de la pantala.*/
 /*Display inline- Espera */
+
+.footer {
+    color: white;
+    background-color: #1d252c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer a {
+    color: white;
+}

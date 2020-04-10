@@ -8,15 +8,14 @@
     <!--Otra forma de colocar los estilos es llamandolos desde un archivo externo.-->
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css"> <!--para hacer este sobre salga se agrega !important en el archivo.-->
-
 </head>
 <body>
     <!--div class="flexbox"> Las cajas que se hacer dentro del flex se redunce si ocupan mas del espacio que se le agrego
     en el css.-->
     <header class="header">
-        <div class="container"> <!--El <div> es un contenedor de elementos-->
+        <!--<div class="container"> El <div> es un contenedor de elementos-->
           <figure class="logo">
-              <img src="images/logo.png" alt="Logo de http://ramonguzman.xyz" />
+              <img src="images/logo.png" height="50" alt="Logo de http://ramonguzman.xyz" />
           </figure>
           <nav class="menu">
               <ol>
@@ -33,7 +32,6 @@
                   </li>
                 </ol>
           </nav>
-        </div>
     </header>
     <section class="hero">
         <h1>
@@ -104,6 +102,14 @@
             <button>Enviar</button> <!--Otra forma de colocar este boton cito es con el <input type="submit" value="texto del boton" -->
         </form>
     </section>
-    <footer class="footer">Pie de página</footer>
+    <footer class="footer">
+        <div>
+            <p>Curso de Desarrollo Web Online 2020 <img src="images/platzi.png" width="80" alt="platzi"></p>
+        </div>
+        <div>
+            <p>Diseñado con amor <\3 por <a href="http://ramonguzman.xyz">@ramonguzman</a>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
