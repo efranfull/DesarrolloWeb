@@ -5,27 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramon Guzman</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <!--Otra forma de colocar los estilos es llamandolos desde un archivo externo.-->    
+    <!--Otra forma de colocar los estilos es llamandolos desde un archivo externo.-->
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css"> <!--para hacer este sobre salga se agrega !important en el archivo.-->
-    
+
 </head>
 <body>
-    <div class="flexbox"> <!--Las cajas que se hacer dentro del flex se redunce si ocupan mas del espacio que se le agrego
+    <!--div class="flexbox"> Las cajas que se hacer dentro del flex se redunce si ocupan mas del espacio que se le agrego
     en el css.-->
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-
-    </div>
     <header class="header">
-        <div> <!--El <div> es un contenedor de elementos-->
+        <div class="container"> <!--El <div> es un contenedor de elementos-->
           <figure class="logo">
               <img src="images/logo.png" alt="Logo de http://ramonguzman.xyz" />
           </figure>
@@ -48,7 +37,7 @@
     </header>
     <section class="hero">
         <h1>
-            Hola! Soy <strong>Ramón Guzmán</strong> <br/>Aprendiz <strong> de HTML</strong> en el Curso <br/> de <strong> Desarrollo Web Online</strong>  
+            Hola! Soy <strong>Ramón Guzmán</strong> <br/>Aprendiz <strong> de HTML</strong> en el Curso <br/> de <strong> Desarrollo Web Online</strong>
         </h1>
         <!-- <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> -->
     </section>
@@ -66,7 +55,7 @@
             </div>
             <figure class="project-imageContainer">
                 <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="Proyecto del Curso de React Native">
-            </figure> 
+            </figure>
         </article>
         <article class="project">
             <div class="project-details">
@@ -80,7 +69,7 @@
             </div>
             <figure class="project-imageContainer">
                 <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="Proyecto del Curso de React Native">
-            </figure> 
+            </figure>
         </article>
     </section>
     <section id="eventos">
@@ -97,22 +86,22 @@
     <section id="contacto" class="contact">
         <form action="/suscripcion/" class="form-email"><!--/suscripcion/ es para enviar a guarda los datos, esto pertenece a programacion en backend-->
 
-            <!--Para dejar escrito un mensaje el textbox del input, además del placeholder se puede usar la etiqueta 
+            <!--Para dejar escrito un mensaje el textbox del input, además del placeholder se puede usar la etiqueta
                 <label for="">Déjame tu email</label>  -->
-            
-            <h3>¿Creamos algo juntos?</h3>    
-            
+
+            <h3>¿Creamos algo juntos?</h3>
+
             <input type="text" placeholder="Déjame tu email"><!--Cuando coloco el atributo value="@gmail.com", se agregara este texto al textbox del input y puedo completarlo;
             en caso de que lo quite (borra para poner datos que quiero), aparece lo escrito en el placeholder="" -->
-            
+
             <!--En caso de que el <label for="email">Déjame tu email</label> y agregamos el atributo id="email" en el input placeholder
             hace un focus (al hacer clic en el mensaje del label se dirige solo al texbox para escribir)-->
-            
+
             <!--Entres los tipos de input type="", tenemos, el button, chechkbox, color, date(cuando haces clic en el textbox te muestra
-                una label o placeholder en formato de tiempo)-->   
-            
+                una label o placeholder en formato de tiempo)-->
+
             <!--<input type="submit" value="texto del botón"> también crea un botón para enviar el formulario-->
-            <button>Enviar</button> <!--Otra forma de colocar este boton cito es con el <input type="submit" value="texto del boton" -->   
+            <button>Enviar</button> <!--Otra forma de colocar este boton cito es con el <input type="submit" value="texto del boton" -->
         </form>
     </section>
     <footer class="footer">Pie de página</footer>
