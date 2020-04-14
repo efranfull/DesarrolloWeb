@@ -203,3 +203,50 @@ figure {
 .footer a {
     color: white;
 }
+
+.event {
+    /*border: 1px solid red; Esto es para distiguir los elemento con un borde rojo */
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.event-list {
+    display: flex;
+}
+
+.event-list-title {
+    margin-left: 20px;
+    padding: ;
+}
+
+.event img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-details {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative; /*Nos siver para superponer elementos encima de otros*/
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.event-description {
+    text-align: left;
+}
+
+.event-url {
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+    border-radius: 5px;
+}
