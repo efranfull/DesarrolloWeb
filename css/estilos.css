@@ -51,6 +51,15 @@ h1 strong {
     color: #026fff;
 }
 
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
 .hero {
     height: 300px;
     background-image: url('../images/hero.jpg'); /*cuando pongo ../ estoy saliendo de la carpeta ccs */
@@ -90,6 +99,26 @@ h1 strong {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.project-course,
+.project-date,
+.project-url {
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 20px;
+}
+
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .project-details {
