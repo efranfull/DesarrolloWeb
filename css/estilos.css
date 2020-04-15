@@ -62,15 +62,19 @@ h2 {
 
 .hero {
     height: 300px;
-    background-image: url('../images/hero.jpg'); /*cuando pongo ../ estoy saliendo de la carpeta ccs */
+    /* background-image: url('../images/hero.jpg'); cuando pongo ../ estoy saliendo de la carpeta ccs */
     background-color: #1b2127;
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right; /*back..posit..-x: 100px la x representa el eje horizaontal y (y) el vertical, pero usaremos right*/ */
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; back..posit..-x: 100px la x representa el eje horizaontal y (y) el vertical, pero usaremos right */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.hero-image{
+    object-fit: cover;
+  }
 
 .portfolio {
     background: #fafafa;
@@ -216,6 +220,7 @@ figure {
 
 .event-list {
     display: flex;
+    flex-wrap: wrap; /*Para que los eventos pasen abajo.*/
 }
 
 .event-list-title {
@@ -317,3 +322,15 @@ figure {
 .form-email h3 {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+.container {
+    /*border: solid red; *//*para destacar en rojo el area que trabajaremos. Al final lo quitamos*/
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit; /* inherit que herede del header*/
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}   
+
