@@ -97,19 +97,37 @@ h1 strong {
 .header {
     background-color: #1b2127;
     color: white;
+    display: flex; /*Para que los elementos hijos se alineen de forma horizontal */
+    justify-content: space-between; /*para mandar cada elemento hijo del header a un extremo contrario.*/
+    height: 90px;
 }
 
+.menu { /*.menu hereda de  .header*/
+    height: inherit;
+}
+
+.header ol { /* .header ol hereda de .menu */
+    display: flex;
+    height: inherit;
+}
+
+.header ol li { /* .header ol li herada de .header ol*/ 
+    height: inherit;
+}
 .header a{
     color: white;
     text-decoration: none;
+    height: inherit;
+    align-items: center;
+    padding: 0 10px; /* <---- solo agregamos esta linea */
 }
 
-.flexbox {
+    /* .flexbox {
     display: flex;
-    /* flex-wrap: nowrap; */
+    flex-wrap: nowrap;
     flex-wrap: wrap;
-    /*flex-direction: column; coloca los box en por columnas, si se elige row seria en filas*/
-}
+    flex-direction: column; coloca los box en por columnas, si se elige row seria en filas
+} */
 
 .box {
     width: 50px;
@@ -121,3 +139,15 @@ h1 strong {
 }
 /*Display block - tomara todo el ancho que pueda de la pantala.*/
 /*Display inline- Espera */
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0; /*Para evitar el espacio en blanco en la parte superior del header*/
+}
+
