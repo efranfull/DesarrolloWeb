@@ -1,18 +1,18 @@
 /*reglas: como se arma todo el comando dentro de css. Ejemplo: el codigo de la linea 8 a la 11.
-selectores : ej: header 
-declaraciones: todo lo que estadentro de las llaves {} es una declaración  
+selectores : ej: header
+declaraciones: todo lo que estadentro de las llaves {} es una declaración
 propiedades background:
-valores: pink;*/ 
+valores: pink;*/
 
 /*header
 {
     background: pink; /* !important agregado para que sobre salga por encima de los demas estilos del html.
 }*/
 
-/*Selector de etiquetas: header, seccion, article - nav. 
+/*Selector de etiquetas: header, seccion, article - nav.
 Selector descendente: body que tiene dentro header, div, nav, ol, li, a
-los mismo dentro del html en pocas palabras. 
-hay atributos o selector de clases, con el comando a class="link" tambien se puede hacer .nombredelaclase 
+los mismo dentro del html en pocas palabras.
+hay atributos o selector de clases, con el comando a class="link" tambien se puede hacer .nombredelaclase
 Selector de id: #. ejemplo: #portafolio*/
 
 /* gris oscuro = #1d252c */
@@ -23,7 +23,7 @@ Selector de id: #. ejemplo: #portafolio*/
 /* box-sizing: border-box; hace que nuestra caja del elemento que queramos se mantenga con el tamaño fijo que hayamos elegido.*/
 
 body{
-    font-family: 'Source Sans Pro', sans-serif; /*sans-serif no es una fuente, solo sino encuentra 
+    font-family: 'Source Sans Pro', sans-serif; /*sans-serif no es una fuente, solo sino encuentra
     la principal buscara otra fuente del sistema*/
     margin: 0px;
 }
@@ -33,15 +33,16 @@ h1, h2, h3, h4, h5, h6
     font-family: 'Fjalla One', sans-serif; /*Cuando las fuentes tienen mas de dos palabras se encierran en comillas '' */
     font-weight: normal; /*100 es el mas fino y 900 es mas grueso, 400 es normal y asi lo puedo escribir y bold es 600*/
     /*font-style: italic; italic, mejor conocida como cursiva*/
-} /*Si unas de mis fuentes no esta instalada en el sistema, la podemos colocar dentro de los archivos del website. 
+} /*Si unas de mis fuentes no esta instalada en el sistema, la podemos colocar dentro de los archivos del website.
     Tambien se puede hacer con algun servicio que nos proveas estos tipos alternativos de letras(fuentes). */
 
 h1 { /*Puede colocar varios estilos al mismo elemento, al ponerlo aqui estoy pisando la propiedad anterior.*/
     font-size: 40px;
-    line-height: 1.5em; /*Que es el tamano de mis fuente, (inspector de elemento chrome) tambien es igual 150%, */ 
+    line-height: 1.5em; /*Que es el tamano de mis fuente, (inspector de elemento chrome) tambien es igual 150%, */
     letter-spacing: -.2px; /*Cambia el espacio que hay entre cada letra. El valor es de valor negativo.*/
     color: white;
-    margin: 100px 150px 70px 30px;/* margin recibe los siguientes parametros: top right bottom left;
+    margin: 0;
+    /*margin: 100px 150px 70px 30px; margin recibe los siguientes parametros: top right bottom left;
     /*text-transform: uppercase; Para cambian a mayuscula*/
     /*text-decoration: underline; con underline es subrayado*/
 }
@@ -50,18 +51,34 @@ h1 strong {
     color: #026fff;
 }
 
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
 .hero {
     height: 300px;
-    background-image: url('../images/hero.jpg'); /*cuando pongo ../ estoy saliendo de la carpeta ccs */
+    /* background-image: url('../images/hero.jpg'); cuando pongo ../ estoy saliendo de la carpeta ccs */
     background-color: #1b2127;
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right; /*back..posit..-x: 100px la x representa el eje horizaontal y (y) el vertical, pero usaremos right*/
-    
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; back..posit..-x: 100px la x representa el eje horizaontal y (y) el vertical, pero usaremos right */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.hero-image{
+    object-fit: cover;
+  }
 
 .portfolio {
     background: #fafafa;
+     padding: 20px;
 }
 
 .project {
@@ -79,11 +96,33 @@ h1 strong {
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; */
-    margin: 10px ;
+    /* margin: 10px ; */
     margin-bottom: 15px;
     padding: 20px;
     background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.project-course,
+.project-date,
+.project-url {
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 20px;
+}
+
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .project-details {
@@ -97,27 +136,41 @@ h1 strong {
 .header {
     background-color: #1b2127;
     color: white;
-    display: flex; /*Para que los elementos hijos se alineen de forma horizontal */
-    justify-content: space-between; /*para mandar cada elemento hijo del header a un extremo contrario.*/
-    height: 90px;
-}
-
-.menu { /*.menu hereda de  .header*/
-    height: inherit;
-}
-
-.header ol { /* .header ol hereda de .menu */
     display: flex;
-    height: inherit;
+    height: 70px; /* <---- solo agregamos esta linea */
+    align-items: center;
+    justify-content: space-between;
 }
 
-.header ol li { /* .header ol li herada de .header ol*/ 
-    height: inherit;
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.header a{
-    color: white;
-    text-decoration: none;
+
+figure {
+  margin: 0;
+}
+
+.menu { /* .menu hereda de .header */
+  height: inherit;
+}
+
+.header ol {
+  display: flex;
+  height: inherit;
+}
+/* .header ol li hereda de .header ol */
+.header ol li { 
+  height: inherit;
+}
+
+.header a {
+    /* color: white; */
+    /* text-decoration: none; */
     height: inherit;
+    display: flex;
     align-items: center;
     padding: 0 10px; /* <---- solo agregamos esta linea */
 }
@@ -134,20 +187,150 @@ h1 strong {
     height: 50px;
     margin: 5 px;
     border: 1px solid red;
-
     flex-shrink: 0; /*evita que los box se encojan quedan del tamaño que se le establecio.*/
 }
 /*Display block - tomara todo el ancho que pueda de la pantala.*/
 /*Display inline- Espera */
 
-ol,
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.footer {
+    color: white;
+    background-color: #1d252c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
 }
 
-figure {
-    margin: 0; /*Para evitar el espacio en blanco en la parte superior del header*/
+.footer img {
+    vertical-align: middle;
 }
+
+.footer a {
+    color: white;
+}
+
+.event {
+    /*border: 1px solid red; Esto es para distiguir los elemento con un borde rojo */
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.event-list {
+    display: flex;
+    flex-wrap: wrap; /*Para que los eventos pasen abajo.*/
+}
+
+.event-list-title {
+    margin-left: 20px;
+    padding: ;
+}
+
+.event img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-details {
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative; /*Nos siver para superponer elementos encima de otros*/
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.event-description {
+    text-align: left;
+}
+
+.event-url {
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+    border-radius: 5px;
+}
+
+.contact {
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social {
+    /* border: 1px solid red; */
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px; 
+    height: 50px;
+    /*border: 1px solid white;*/
+    background-size: 50px 50px;
+    margin: 0 5px;
+    
+}
+
+.social-link.twitter {
+    background-image: url(../images/twitter.svg);
+}
+
+.social-link.facebook {
+    background-image: url(../images/facebook.svg);
+}
+
+.social-link.github {
+    background-image: url(../images/github.svg);
+}
+
+.social-link.instagram {
+    background-image: url(../images/instagram.svg);
+}
+
+.form-email input {
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url(../images/envelope.svg);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button {
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+    /* margin: 10px auto 0; */
+}
+
+.form-email h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    /*border: solid red; *//*para destacar en rojo el area que trabajaremos. Al final lo quitamos*/
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit; /* inherit que herede del header*/
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}   
 

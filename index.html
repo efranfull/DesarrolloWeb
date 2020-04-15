@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramon Guzman</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <!--Otra forma de colocar los estilos es llamandolos desde un archivo externo.-->    
+    <!--Otra forma de colocar los estilos es llamandolos desde un archivo externo.-->
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css"> <!--para hacer este sobre salga se agrega !important en el archivo.-->
-    
 </head>
 <body>
+    <!--div class="flexbox"> Las cajas que se hacer dentro del flex se redunce si ocupan mas del espacio que se le agrego
+    en el css.-->
     <header class="header">
-        <div> <!--El <div> es un contenedor de elementos-->
+        <div class="container"> <!--El <div> es un contenedor de elementos, tambien llamados wrapper-->
           <figure class="logo">
-              <img src="images/logo.png" alt="Logo de http://ramonguzman.xyz" />
+              <img src="images/logo.png" height="50" alt="Logo de http://ramonguzman.xyz" />
           </figure>
           <nav class="menu">
               <ol>
@@ -31,77 +32,148 @@
                   </li>
                 </ol>
           </nav>
-        </div>
+        </div>  
     </header>
     <section class="hero">
-        <h1>
-            Hola! Soy <strong>Ramón Guzmán</strong> <br/>Aprendiz <strong> de HTML</strong> en el Curso <br/> de <strong> Desarrollo Web Online</strong>  
-        </h1>
-        <!-- <img src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> -->
+        <div class="container">
+            <h1>
+                Hola! Soy <strong>Ramón Guzmán</strong> <br/>Aprendiz <strong> de HTML</strong> en el Curso <br/> de <strong> Desarrollo Web Online</strong>
+            </h1>
+            <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> 
+        </div>
     </section>
     <section id="portafolio" class="portfolio">
-        <h2>Portafolio (Proyectos Destacados)</h2>
-        <article class="project">
-            <div class="project-details">
-            <h3 class="project-title">Platzi Video</h3>
-            <h6 class="project-course">React Native / React</h6>
-            <p class="project-date"><small><strong>Fecha:</strong>22/03/2020</small></p>
-            <p class="project-url"><small><strong>Puedes verlo en:</strong> www.ramonguzman.xyz</small></p>
-            <p class="project-description">Platzi Video fue el resultado de 3 meses de Trabajemos
-                para crear la mejor app para enseñar el funcionamiento
-                de React y React Native. Desde crear una vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataformas.</p>
-            </div>
-            <figure class="project-imageContainer">
-                <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="Proyecto del Curso de React Native">
-            </figure> 
-        </article>
-        <article class="project">
-            <div class="project-details">
-            <h3 class="project-title">Platzi Video</h3>
-            <h6 class="project-course">React Native / React</h6>
-            <p class="project-date"><small><strong>Fecha:</strong>22/03/2020</small></p>
-            <p class="project-url"><small><strong>Puedes verlo en:</strong> www.ramonguzman.xyz</small></p>
-            <p class="project-description">Platzi Video fue el resultado de 3 meses de Trabajemos
-                para crear la mejor app para enseñar el funcionamiento
-                de React y React Native. Desde crear una vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataformas.</p>
-            </div>
-            <figure class="project-imageContainer">
-                <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="Proyecto del Curso de React Native">
-            </figure> 
-        </article>
+        <div class="container">
+            <h2>Portafolio (Proyectos Destacados)</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi Video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 22/03/2020</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> www.ramonguzman.xyz</small></p>
+                    <p class="project-description">Platzi Video fue el resultado de 3 meses de Trabajemos
+                    para crear la mejor app para enseñar el funcionamiento
+                    de React y React Native. Desde crear una vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataformas.</p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="Proyecto del Curso de React Native">
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi Video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 22/03/2020</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> www.ramonguzman.xyz</small></p>
+                    <p class="project-description">Platzi Video fue el resultado de 3 meses de Trabajemos
+                    para crear la mejor app para enseñar el funcionamiento
+                    de React y React Native. Desde crear una vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataformas.</p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="Proyecto del Curso de React Native">
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi Video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"><small><strong>Fecha:</strong> 22/03/2020</small></p>
+                    <p class="project-url"><small><strong>Puedes verlo en:</strong> www.ramonguzman.xyz</small></p>
+                    <p class="project-description">Platzi Video fue el resultado de 3 meses de Trabajemos
+                    para crear la mejor app para enseñar el funcionamiento
+                    de React y React Native. Desde crear una vista-detalle, hasta patrones avanzados de navegación, este proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataformas.</p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" width="500" src="images/platzi-video-react-native.png" alt="Proyecto del Curso de React Native">
+                </figure>
+            </article>
+        </div>
     </section>
-    <section id="eventos">
-        <h2>Más sobre mi experiencia</h2>
+    <div class="container">
+        <h2 class="event-list-title">Más sobre mi experiencia</h2>
+    </div>
+    <section id="eventos" class="event-list">
+        <div class="container">
+        <article class="event">
+              <figure class="event-imageContainer">
+                <img class="event-image" src="images/platzi-conf.jpg" width="500"/>
+              </figure>
+            <div class="event-details">
+               <h3 class="event-title">PlatziConf México 2020</h3>
+                <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En este </p>
+                <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Pláctica</a> 
+            </div>
+        </article>
         <article class="event">
             <figure class="event-imageContainer">
                 <img class="event-image" src="images/platzi-conf.jpg" width="500"/>
             </figure>
-            <h3 class="event-title">PlatziConf México 2020</h3>
-            <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En este </p>
-            <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Pláctica</a>
+            <div class="event-details">
+               <h3 class="event-title">PlatziConf México 2020</h3>
+                <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En este </p>
+                <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Pláctica</a> 
+            </div>
         </article>
+        <article class="event">
+            <figure class="event-imageContainer">
+                <img class="event-image" src="images/platzi-conf.jpg" width="500"/>
+            </figure>
+            <div class="event-details">
+               <h3 class="event-title">PlatziConf México 2020</h3>
+                <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En este </p>
+                <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Pláctica</a> 
+            </div>
+        </article>
+        <article class="event">
+            <figure class="event-imageContainer">
+                <img class="event-image" src="images/platzi-conf.jpg" width="500"/>
+            </figure>
+            <div class="event-details">
+               <h3 class="event-title">PlatziConf México 2020</h3>
+                <p class="event-description">El evento más grande sobre gente que quiere aprender más de internet. En este </p>
+                <a class="event-url" href="https://www.youtube.com/watch?v=BIS7cWGgJg0" target="_blank">Ver Pláctica</a> 
+            </div>
+        </article>
+    </div>
     </section>
     <section id="contacto" class="contact">
-        <form action="/suscripcion/" class="form-email"><!--/suscripcion/ es para enviar a guarda los datos, esto pertenece a programacion en backend-->
+        <div class="container">
+            <form action="/suscripcion/" class="form-email"><!--/suscripcion/ es para enviar a guarda los datos, esto pertenece a programacion en backend-->
+                <!--Para dejar escrito un mensaje el textbox del input, además del placeholder se puede usar la etiqueta
+                    <label for="">Déjame tu email</label>  -->
 
-            <!--Para dejar escrito un mensaje el textbox del input, además del placeholder se puede usar la etiqueta 
-                <label for="">Déjame tu email</label>  -->
-            
-            <h3>¿Creamos algo juntos?</h3>    
-            
-            <input type="text" placeholder="Déjame tu email"><!--Cuando coloco el atributo value="@gmail.com", se agregara este texto al textbox del input y puedo completarlo;
+                <h3>¿Creamos algo juntos?</h3>
+                <input type="text" placeholder="Déjame tu email">
+            <!--Cuando coloco el atributo value="@gmail.com", se agregara este texto al textbox del input y puedo completarlo;
             en caso de que lo quite (borra para poner datos que quiero), aparece lo escrito en el placeholder="" -->
-            
+
             <!--En caso de que el <label for="email">Déjame tu email</label> y agregamos el atributo id="email" en el input placeholder
             hace un focus (al hacer clic en el mensaje del label se dirige solo al texbox para escribir)-->
-            
+
             <!--Entres los tipos de input type="", tenemos, el button, chechkbox, color, date(cuando haces clic en el textbox te muestra
-                una label o placeholder en formato de tiempo)-->   
-            
+                una label o placeholder en formato de tiempo)-->
+
             <!--<input type="submit" value="texto del botón"> también crea un botón para enviar el formulario-->
-            <button>Enviar</button> <!--Otra forma de colocar este boton cito es con el <input type="submit" value="texto del boton" -->   
-        </form>
+                <button>Enviar</button> <!--Otra forma de colocar este boton cito es con el <input type="submit" value="texto del boton" -->
+            </form> 
+            <div class="social">
+                <a href="https://twitter.com/efranfull" class="social-link twitter" target="_blank"></a>
+                <a href="https://www.facebook.com/efran.full" class="social-link facebook" target="_blank"></a>
+                <a href="https://github.com/efranfull" class="social-link github" target="_blank"></a>
+                <a href="https://www.instagram.com/efranfullr/" class="social-link instagram" target="_blank"></a>
+            </div>
+    </div>    
     </section>
-    <footer class="footer">Pie de página</footer>
+    <footer class="footer">
+        <div class="container">
+        <div>
+            <p>Curso de Desarrollo Web Online 2020 <img src="images/platzi.png" width="80" alt="platzi"></p>
+        </div>
+        <div>
+            <p>Diseñado con amor <\3 por <a href="http://ramonguzman.xyz">@ramonguzman</a>
+            </p>
+        </div>
+    </div>
+    </footer>
 </body>
 </html>
